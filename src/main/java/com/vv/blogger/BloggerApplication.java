@@ -22,11 +22,14 @@ public class BloggerApplication implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
         Blog blog = new Blog();
-        blog.setId(1);
         blog.setTitle("AAAA");
         blog.setBody("new body");
         blog.setCreateDate(new Date());
-        this.bloggerMapper.insert(blog);
+//        this.bloggerMapper.insert(blog);
+//        System.out.println(">>>> " + blog.getId());
+//        this.bloggerMapper.deleteBlog(1);
+        blog.setId(4);
+        this.bloggerMapper.update(blog);
     }
 
     public static void main(String[] args) {
