@@ -1,0 +1,1 @@
+ALTER TABLE blogger.blog ADD createDate date NULL;
